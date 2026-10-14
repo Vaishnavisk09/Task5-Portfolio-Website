@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO Meta ──────────────────────────────────────── -->
+  <title>Vaishnavi Kadam — Computer Engineering Student &amp; Web Developer</title>
+  <meta name="description" content="Personal portfolio of Vaishnavi Kadam, a Computer Engineering student at SAKEC passionate about web development, programming, and building practical technology projects." />
+  <meta name="author" content="Vaishnavi Kadam" />
+  <meta name="keywords" content="Vaishnavi Kadam, web developer, portfolio, SAKEC, computer engineering, HTML CSS JavaScript" />
+
+  <!-- ── Open Graph ────────────────────────────────────── -->
+  <meta property="og:title" content="Vaishnavi Kadam — Portfolio" />
+  <meta property="og:description" content="Computer Engineering Student & Aspiring Developer at SAKEC." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vaishnavisk09.github.io/" />
+
+  <!-- ── Favicon (SVG initials) ────────────────────────── -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%237c3aed'/><text x='50%' y='72%' font-family='Georgia,serif' font-size='14' font-style='italic' font-weight='bold' fill='white' text-anchor='middle'>VK</text></svg>" />
+
+  <!-- ── Stylesheet ────────────────────────────────────── -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ── Google Fonts preconnect ───────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container nav-inner">
+
+    <!-- Logo -->
+    <a href="#home" class="nav-logo" aria-label="Vaishnavi Kadam — back to top">
+      <div class="nav-logo-mark" aria-hidden="true">VK</div>
+      <span>Vaishnavi Kadam</span>
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="nav-links" role="list">
+      <li><a href="#home"     class="nav-link active" id="nav-home">Home</a></li>
+      <li><a href="#about"    class="nav-link"         id="nav-about">About</a></li>
+      <li><a href="#skills"   class="nav-link"         id="nav-skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link"         id="nav-projects">Projects</a></li>
+      <li><a href="#contact"  class="nav-link nav-cta" id="nav-contact">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</nav>
+
+<!-- Mobile Drawer -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <a href="#home"     class="mobile-nav-link" id="mnav-home">🏠 Home</a>
+  <a href="#about"    class="mobile-nav-link" id="mnav-about">👩‍💻 About</a>
+  <a href="#skills"   class="mobile-nav-link" id="mnav-skills">⚡ Skills</a>
+  <a href="#projects" class="mobile-nav-link" id="mnav-projects">🗂️ Projects</a>
+  <a href="#contact"  class="mobile-nav-link mobile-cta" id="mnav-contact">✉️ Contact Me</a>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════ -->
+<section class="hero" id="home" aria-label="Introduction">
+  <div class="container hero-inner">
+
+    <!-- Text -->
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot" aria-hidden="true"></span>
+        Available for Internships &amp; Collaborations
+      </div>
+      <p class="hero-greeting">console.log("Hello, World! 👋")</p>
+      <h1 class="hero-name">Hi, I'm Vaishnavi Kadam</h1>
+      <p class="hero-role">Computer Engineering Student &amp; Aspiring Developer</p>
+      <p class="hero-desc">
+        I'm a Computer Engineering student at SAKEC with a genuine passion for building thoughtful,
+        user-friendly web experiences. I enjoy turning ideas into interactive products — from
+        responsive interfaces to practical programming projects — and I'm always excited to learn
+        new technologies along the way.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" id="btn-explore-work">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 3l14 9-14 9V3z"/></svg>
+          Explore My Work
+        </a>
+        <a href="#contact" class="btn btn-secondary" id="btn-contact-hero">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Contact Me
+        </a>
+      </div>
+      <div class="hero-social">
+        <span class="hero-social-label">Find me on</span>
+        <a href="https://github.com/vaishnavisk09" target="_blank" rel="noopener noreferrer" class="social-link" id="link-github-hero" aria-label="GitHub profile">
+          <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .5C5.649.5.5 5.649.5 12c0 5.099 3.308 9.416 7.894 10.944.577.106.788-.25.788-.556 0-.274-.01-1-.015-1.962-3.21.698-3.888-1.547-3.888-1.547-.525-1.334-1.282-1.689-1.282-1.689-1.047-.716.08-.702.08-.702 1.158.082 1.767 1.19 1.767 1.19 1.029 1.763 2.699 1.254 3.358.96.104-.745.403-1.254.732-1.543-2.563-.292-5.26-1.281-5.26-5.7 0-1.26.45-2.29 1.188-3.098-.119-.292-.515-1.465.112-3.054 0 0 .97-.31 3.177 1.184a11.06 11.06 0 012.893-.39c.981.004 1.969.133 2.893.39 2.204-1.494 3.172-1.184 3.172-1.184.629 1.589.233 2.762.114 3.054.74.808 1.187 1.838 1.187 3.098 0 4.43-2.701 5.405-5.273 5.69.415.359.785 1.065.785 2.145 0 1.548-.014 2.795-.014 3.175 0 .309.208.668.793.555C20.195 21.413 23.5 17.097 23.5 12 23.5 5.649 18.351.5 12 .5z"/>
+          </svg>
+          vaishnavisk09
+        </a>
+      </div>
+    </div>
+
+    <!-- Visual -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="avatar-wrap">
+        <div class="avatar-ring avatar-ring-1"></div>
+        <div class="avatar-ring avatar-ring-2"></div>
+        <div class="avatar-main">
+          <span class="avatar-initials">VK</span>
+        </div>
+
+        <!-- Floating code snippet cards -->
+        <div class="code-card code-card-tl">
+          <div class="code-line-purple">const&nbsp;<span class="code-line-blue">dev</span> = {</div>
+          <div>&nbsp;&nbsp;name: <span class="code-line-green">"Vaishnavi"</span>,</div>
+          <div>&nbsp;&nbsp;role: <span class="code-line-green">"Student"</span>,</div>
+          <div>&nbsp;&nbsp;loves: <span class="code-line-green">"Building"</span></div>
+          <div class="code-line-purple">};</div>
+        </div>
+
+        <div class="code-card code-card-br">
+          <div class="code-line-muted">// Skills</div>
+          <div><span class="code-line-purple">HTML</span> · <span class="code-line-blue">CSS</span> · <span class="code-line-green">JS</span></div>
+          <div><span class="code-line-purple">Python</span> · <span class="code-line-blue">Java</span></div>
+          <div class="code-line-muted">Git · APIs</div>
+        </div>
+
+        <!-- Tech dots -->
+        <div class="tech-dot td-1">HTML5</div>
+        <div class="tech-dot td-2">JavaScript</div>
+        <div class="tech-dot td-3">Python</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════════════════ -->
+<section class="about section" id="about" aria-label="About me">
+  <div class="container about-inner">
+
+    <!-- Text column -->
+    <div class="about-text">
+      <span class="section-label">✦ About Me</span>
+      <h2 class="section-title">Passionate about<br/>building with code</h2>
+
+      <p>
+        I'm Vaishnavi Kadam, a Computer Engineering student at Shah &amp; Anchor Kutchhi Engineering
+        College (SAKEC), Mumbai. My interest in technology began with curiosity about how websites
+        work — and since then, I've been on a rewarding journey of learning to build them myself.
+      </p>
+      <p>
+        I genuinely enjoy the creative and logical challenge of web development: designing clean
+        interfaces, writing structured code, and seeing ideas come alive in a browser. I'm drawn to
+        projects that solve real problems in a simple, practical way.
+      </p>
+      <p>
+        Outside of web development, I have a strong foundation in core programming languages and
+        enjoy exploring new frameworks and tools. I'm always looking for opportunities to collaborate,
+        contribute, and keep growing as a developer.
+      </p>
+
+      <!-- Mini info cards -->
+      <div class="about-cards">
+        <div class="about-card reveal">
+          <div class="about-card-icon">🎓</div>
+          <div class="about-card-title">Computer Engineering</div>
+          <div class="about-card-text">B.E. in Computer Engineering at SAKEC, Mumbai</div>
+        </div>
+        <div class="about-card reveal reveal-delay-1">
+          <div class="about-card-icon">💻</div>
+          <div class="about-card-title">Web Developer</div>
+          <div class="about-card-text">Building responsive, accessible web interfaces</div>
+        </div>
+        <div class="about-card reveal reveal-delay-2">
+          <div class="about-card-icon">🧩</div>
+          <div class="about-card-title">Problem Solver</div>
+          <div class="about-card-text">Enjoys algorithmic thinking and clean code</div>
+        </div>
+        <div class="about-card reveal reveal-delay-3">
+          <div class="about-card-icon">📚</div>
+          <div class="about-card-title">Lifelong Learner</div>
+          <div class="about-card-text">Always exploring new technologies and concepts</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Side info cards -->
+    <div class="about-side">
+      <div class="info-card reveal">
+        <div class="info-card-header">
+          <div class="info-icon">🎓</div>
+          <div>
+            <div class="info-card-title">Education</div>
+            <div class="info-card-sub">Academic background</div>
+          </div>
+        </div>
+        <div class="info-list">
+          <div class="info-row">
+            <span class="info-row-key">Degree</span>
+            <span class="info-row-val">B.E. Computer Engineering</span>
+          </div>
+          <div class="info-row">
+            <span class="info-row-key">College</span>
+            <span class="info-row-val">SAKEC, Mumbai</span>
+          </div>
+          <div class="info-row">
+            <span class="info-row-key">Status</span>
+            <span class="info-row-val">Currently Enrolled</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card reveal reveal-delay-1">
+        <div class="info-card-header">
+          <div class="info-icon">📬</div>
+          <div>
+            <div class="info-card-title">Contact Info</div>
+            <div class="info-card-sub">Ways to reach me</div>
+          </div>
+        </div>
+        <div class="info-list">
+          <div class="info-row">
+            <span class="info-row-key">Email</span>
+            <span class="info-row-val" style="font-size:0.78rem;">vaishnavi.kadam24@sakec.ac.in</span>
+          </div>
+          <div class="info-row">
+            <span class="info-row-key">GitHub</span>
+            <span class="info-row-val">vaishnavisk09</span>
+          </div>
+          <div class="info-row">
+            <span class="info-row-key">Location</span>
+            <span class="info-row-val">Mumbai, India</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card reveal reveal-delay-2">
+        <div class="info-card-header">
+          <div class="info-icon">🔍</div>
+          <div>
+            <div class="info-card-title">Interests</div>
+            <div class="info-card-sub">What I enjoy working on</div>
+          </div>
+        </div>
+        <div class="info-list">
+          <div class="info-row">
+            <span class="info-row-key">🌐</span>
+            <span class="info-row-val">Web Development</span>
+          </div>
+          <div class="info-row">
+            <span class="info-row-key">⚙️</span>
+            <span class="info-row-val">Backend & APIs</span>
+          </div>
+          <div class="info-row">
+            <span class="info-row-key">🎨</span>
+            <span class="info-row-val">UI / UX Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     WHAT I DO
+════════════════════════════════════════════════════════ -->
+<section class="what-i-do section" id="what-i-do" aria-label="What I do">
+  <div class="container text-center">
+    <span class="section-label">✦ What I Do</span>
+    <h2 class="section-title">Areas I focus on</h2>
+    <p class="section-subtitle">
+      From crafting pixel-perfect interfaces to solving algorithmic problems, here's where I
+      channel my energy as a student developer.
+    </p>
+
+    <div class="do-grid">
+
+      <!-- Card 1 -->
+      <div class="do-card reveal">
+        <div class="do-icon"><span>🌐</span></div>
+        <h3 class="do-title">Frontend Development</h3>
+        <p class="do-desc">
+          I love creating clean, responsive web interfaces using HTML, CSS, and JavaScript.
+          I focus on thoughtful layouts, smooth interactions, and making sure sites look
+          great on every screen size — from mobile phones to wide desktops.
+        </p>
+        <div class="do-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Responsive Design</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="do-card reveal reveal-delay-1">
+        <div class="do-icon"><span>🧠</span></div>
+        <h3 class="do-title">Programming &amp; Problem Solving</h3>
+        <p class="do-desc">
+          I enjoy working through logical challenges with Python, Java, and C/C++.
+          Whether it's building a REST API, implementing data structures, or debugging
+          tricky code, I find the process of structured thinking genuinely satisfying.
+        </p>
+        <div class="do-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Java</span>
+          <span class="tag">C / C++</span>
+          <span class="tag">REST APIs</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="do-card reveal reveal-delay-2">
+        <div class="do-icon"><span>🛠️</span></div>
+        <h3 class="do-title">Building Practical Web Projects</h3>
+        <p class="do-desc">
+          I believe the best way to learn is to build. I work on small, purposeful
+          projects — landing pages, productivity tools, and API-backed applications —
+          that help me connect concepts to real-world use cases and grow my skills
+          with every iteration.
+        </p>
+        <div class="do-tags">
+          <span class="tag">Git &amp; GitHub</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Express</span>
+          <span class="tag">Projects</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SKILLS
+════════════════════════════════════════════════════════ -->
+<section class="skills section" id="skills" aria-label="Technical skills">
+  <div class="container text-center">
+    <span class="section-label">✦ Technical Skills</span>
+    <h2 class="section-title">Technologies I work with</h2>
+    <p class="section-subtitle">
+      A snapshot of the languages, tools, and areas I've been learning and applying
+      in my projects and coursework.
+    </p>
+    <p class="skills-note">Presented as technologies of interest — not verified proficiency ratings.</p>
+
+    <div class="skills-grid" role="list" aria-label="Skills list">
+
+      <div class="skill-card reveal" role="listitem">
+        <span class="skill-emoji" aria-hidden="true">🌐</span>
+        <span class="skill-name">HTML5</span>
+        <span class="skill-type">Markup</span>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-1" role="listitem">
+        <span class="skill-emoji" aria-hidden="true">🎨</span>
+        <span class="skill-name">CSS3</span>
+        <span class="skill-type">Styling</span>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-2" role="listitem">
+        <span class="skill-emoji" aria-hidden="true">⚡</span>
+        <span class="skill-name">JavaScript</span>
+        <span class="skill-type">Language</span>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-3" role="listitem">
+        <span class="skill-emoji" aria-hidden="true">🐍</span>
+        <span class="skill-name">Python</span>
+        <span class="skill-type">Language</span>
+      </div>
+
+      <div class="skill-card reveal" role="listitem">
+        <span class="skill-emoji" aria-hidden="true">☕</span>
+        <span class="skill-name">Java</span>
+        <span class="skill-type">Language</span>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-1" role="listitem">
+        <span class="skill-emoji" aria-hidden="true">⚙️</span>
+        <span class="skill-name">C / C++</span>
+        <span class="skill-type">Language</span>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-2" role="listitem">
+        <span class="skill-emoji" aria-hidden="true">🐙</span>
+        <span class="skill-name">Git &amp; GitHub</span>
+        <span class="skill-type">Version Control</span>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-3" role="listitem">
+        <span class="skill-emoji" aria-hidden="true">📱</span>
+        <span class="skill-name">Responsive Design</span>
+        <span class="skill-type">Web</span>
+      </div>
+
+      <div class="skill-card reveal" role="listitem">
+        <span class="skill-emoji" aria-hidden="true">🔗</span>
+        <span class="skill-name">REST APIs</span>
+        <span class="skill-type">Web Services</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PROJECTS
+════════════════════════════════════════════════════════ -->
+<!--
+  ╔═══════════════════════════════════════════════════════╗
+  ║  PROJECT LINKS — CONFIGURATION SECTION               ║
+  ║  Update the href values below once your repos are     ║
+  ║  created and live. Replace # with the actual URL.     ║
+  ║  Example:                                             ║
+  ║    Live Demo   → https://vaishnavisk09.github.io/...  ║
+  ║    Source Code → https://github.com/vaishnavisk09/... ║
+  ╚═══════════════════════════════════════════════════════╝
+-->
+<section class="projects section" id="projects" aria-label="Featured projects">
+  <div class="container text-center">
+    <span class="section-label">✦ Featured Projects</span>
+    <h2 class="section-title">Things I've built</h2>
+    <p class="section-subtitle">
+      A selection of projects I've worked on — each one a chance to apply new ideas
+      and sharpen my skills.
+    </p>
+
+    <div class="projects-grid">
+
+      <!-- Project 1: Lumora Landing Page -->
+      <article class="project-card reveal" aria-label="Lumora Landing Page project">
+        <div class="project-card-header">
+          <div class="project-thumb thumb-a" aria-hidden="true">✨</div>
+          <span class="project-status">Completed</span>
+        </div>
+        <div class="project-card-body">
+          <h3 class="project-title">Lumora Landing Page</h3>
+          <p class="project-desc">
+            A fully responsive, modern landing page featuring a clean hero section,
+            smooth scroll animations, and a structured layout designed to be visually
+            compelling and easy to navigate on any device.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Responsive</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <!-- Update href with your actual live demo URL when available -->
+          <a href="https://github.com/vaishnavisk09"
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn-secondary btn-sm"
+             id="btn-lumora-demo"
+             aria-label="Lumora Landing Page source code on GitHub">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.649.5.5 5.649.5 12c0 5.099 3.308 9.416 7.894 10.944.577.106.788-.25.788-.556 0-.274-.01-1-.015-1.962-3.21.698-3.888-1.547-3.888-1.547-.525-1.334-1.282-1.689-1.282-1.689-1.047-.716.08-.702.08-.702 1.158.082 1.767 1.19 1.767 1.19 1.029 1.763 2.699 1.254 3.358.96.104-.745.403-1.254.732-1.543-2.563-.292-5.26-1.281-5.26-5.7 0-1.26.45-2.29 1.188-3.098-.119-.292-.515-1.465.112-3.054 0 0 .97-.31 3.177 1.184a11.06 11.06 0 012.893-.39c.981.004 1.969.133 2.893.39 2.204-1.494 3.172-1.184 3.172-1.184.629 1.589.233 2.762.114 3.054.74.808 1.187 1.838 1.187 3.098 0 4.43-2.701 5.405-5.273 5.69.415.359.785 1.065.785 2.145 0 1.548-.014 2.795-.014 3.175 0 .309.208.668.793.555C20.195 21.413 23.5 17.097 23.5 12 23.5 5.649 18.351.5 12 .5z"/></svg>
+            Source Code
+          </a>
+        </div>
+        <p class="project-notice">💡 Update the link above with your actual repository URL once created.</p>
+      </article>
+
+      <!-- Project 2: Bloom To-Do List -->
+      <article class="project-card reveal reveal-delay-1" aria-label="Bloom To-Do List project">
+        <div class="project-card-header">
+          <div class="project-thumb thumb-b" aria-hidden="true">✅</div>
+          <span class="project-status">Completed</span>
+        </div>
+        <div class="project-card-body">
+          <h3 class="project-title">Bloom To-Do List</h3>
+          <p class="project-desc">
+            A clean, intuitive task management interface for organizing daily activities.
+            Features include adding, completing, and removing tasks with a smooth,
+            distraction-free user experience built using pure JavaScript.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">LocalStorage</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <!-- Update href with your actual repository URL when available -->
+          <a href="https://github.com/vaishnavisk09"
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn-secondary btn-sm"
+             id="btn-bloom-source"
+             aria-label="Bloom To-Do List source code on GitHub">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.649.5.5 5.649.5 12c0 5.099 3.308 9.416 7.894 10.944.577.106.788-.25.788-.556 0-.274-.01-1-.015-1.962-3.21.698-3.888-1.547-3.888-1.547-.525-1.334-1.282-1.689-1.282-1.689-1.047-.716.08-.702.08-.702 1.158.082 1.767 1.19 1.767 1.19 1.029 1.763 2.699 1.254 3.358.96.104-.745.403-1.254.732-1.543-2.563-.292-5.26-1.281-5.26-5.7 0-1.26.45-2.29 1.188-3.098-.119-.292-.515-1.465.112-3.054 0 0 .97-.31 3.177 1.184a11.06 11.06 0 012.893-.39c.981.004 1.969.133 2.893.39 2.204-1.494 3.172-1.184 3.172-1.184.629 1.589.233 2.762.114 3.054.74.808 1.187 1.838 1.187 3.098 0 4.43-2.701 5.405-5.273 5.69.415.359.785 1.065.785 2.145 0 1.548-.014 2.795-.014 3.175 0 .309.208.668.793.555C20.195 21.413 23.5 17.097 23.5 12 23.5 5.649 18.351.5 12 .5z"/></svg>
+            Source Code
+          </a>
+        </div>
+        <p class="project-notice">💡 Update the link above with your actual repository URL once created.</p>
+      </article>
+
+      <!-- Project 3: Book REST API -->
+      <article class="project-card reveal reveal-delay-2" aria-label="Book REST API project">
+        <div class="project-card-header">
+          <div class="project-thumb thumb-c" aria-hidden="true">📚</div>
+          <span class="project-status">Completed</span>
+        </div>
+        <div class="project-card-body">
+          <h3 class="project-title">Book REST API</h3>
+          <p class="project-desc">
+            A simple REST API for managing book records built with Node.js and Express.
+            Supports CRUD operations — create, read, update, and delete — demonstrating
+            backend fundamentals and RESTful design principles.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">REST API</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <!-- Update href with your actual repository URL when available -->
+          <a href="https://github.com/vaishnavisk09"
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn-secondary btn-sm"
+             id="btn-bookapi-source"
+             aria-label="Book REST API source code on GitHub">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.649.5.5 5.649.5 12c0 5.099 3.308 9.416 7.894 10.944.577.106.788-.25.788-.556 0-.274-.01-1-.015-1.962-3.21.698-3.888-1.547-3.888-1.547-.525-1.334-1.282-1.689-1.282-1.689-1.047-.716.08-.702.08-.702 1.158.082 1.767 1.19 1.767 1.19 1.029 1.763 2.699 1.254 3.358.96.104-.745.403-1.254.732-1.543-2.563-.292-5.26-1.281-5.26-5.7 0-1.26.45-2.29 1.188-3.098-.119-.292-.515-1.465.112-3.054 0 0 .97-.31 3.177 1.184a11.06 11.06 0 012.893-.39c.981.004 1.969.133 2.893.39 2.204-1.494 3.172-1.184 3.172-1.184.629 1.589.233 2.762.114 3.054.74.808 1.187 1.838 1.187 3.098 0 4.43-2.701 5.405-5.273 5.69.415.359.785 1.065.785 2.145 0 1.548-.014 2.795-.014 3.175 0 .309.208.668.793.555C20.195 21.413 23.5 17.097 23.5 12 23.5 5.649 18.351.5 12 .5z"/></svg>
+            Source Code
+          </a>
+        </div>
+        <p class="project-notice">💡 Update the link above with your actual repository URL once created.</p>
+      </article>
+
+      <!-- Project 4: Travel Explorer -->
+      <article class="project-card reveal reveal-delay-3" aria-label="Travel Explorer project">
+        <div class="project-card-header">
+          <div class="project-thumb thumb-d" aria-hidden="true">✈️</div>
+          <span class="project-status">Completed</span>
+        </div>
+        <div class="project-card-body">
+          <h3 class="project-title">Travel Explorer</h3>
+          <p class="project-desc">
+            A responsive travel-themed website showcasing destinations with an attractive
+            gallery layout, interactive cards, and mobile-friendly navigation — designed to
+            bring the wanderlust experience to life on screen.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Responsive</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <!-- Update href with your actual repository URL when available -->
+          <a href="https://github.com/vaishnavisk09"
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn-secondary btn-sm"
+             id="btn-travel-source"
+             aria-label="Travel Explorer source code on GitHub">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.649.5.5 5.649.5 12c0 5.099 3.308 9.416 7.894 10.944.577.106.788-.25.788-.556 0-.274-.01-1-.015-1.962-3.21.698-3.888-1.547-3.888-1.547-.525-1.334-1.282-1.689-1.282-1.689-1.047-.716.08-.702.08-.702 1.158.082 1.767 1.19 1.767 1.19 1.029 1.763 2.699 1.254 3.358.96.104-.745.403-1.254.732-1.543-2.563-.292-5.26-1.281-5.26-5.7 0-1.26.45-2.29 1.188-3.098-.119-.292-.515-1.465.112-3.054 0 0 .97-.31 3.177 1.184a11.06 11.06 0 012.893-.39c.981.004 1.969.133 2.893.39 2.204-1.494 3.172-1.184 3.172-1.184.629 1.589.233 2.762.114 3.054.74.808 1.187 1.838 1.187 3.098 0 4.43-2.701 5.405-5.273 5.69.415.359.785 1.065.785 2.145 0 1.548-.014 2.795-.014 3.175 0 .309.208.668.793.555C20.195 21.413 23.5 17.097 23.5 12 23.5 5.649 18.351.5 12 .5z"/></svg>
+            Source Code
+          </a>
+        </div>
+        <p class="project-notice">💡 Update the link above with your actual repository URL once created.</p>
+      </article>
+
+    </div>
+
+    <!-- GitHub CTA -->
+    <div style="margin-top:2.5rem;">
+      <a href="https://github.com/vaishnavisk09"
+         target="_blank" rel="noopener noreferrer"
+         class="btn btn-secondary"
+         id="btn-view-github">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.649.5.5 5.649.5 12c0 5.099 3.308 9.416 7.894 10.944.577.106.788-.25.788-.556 0-.274-.01-1-.015-1.962-3.21.698-3.888-1.547-3.888-1.547-.525-1.334-1.282-1.689-1.282-1.689-1.047-.716.08-.702.08-.702 1.158.082 1.767 1.19 1.767 1.19 1.029 1.763 2.699 1.254 3.358.96.104-.745.403-1.254.732-1.543-2.563-.292-5.26-1.281-5.26-5.7 0-1.26.45-2.29 1.188-3.098-.119-.292-.515-1.465.112-3.054 0 0 .97-.31 3.177 1.184a11.06 11.06 0 012.893-.39c.981.004 1.969.133 2.893.39 2.204-1.494 3.172-1.184 3.172-1.184.629 1.589.233 2.762.114 3.054.74.808 1.187 1.838 1.187 3.098 0 4.43-2.701 5.405-5.273 5.69.415.359.785 1.065.785 2.145 0 1.548-.014 2.795-.014 3.175 0 .309.208.668.793.555C20.195 21.413 23.5 17.097 23.5 12 23.5 5.649 18.351.5 12 .5z"/></svg>
+        View All Repositories on GitHub
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════════════════ -->
+<section class="contact section" id="contact" aria-label="Contact section">
+  <div class="container">
+    <div class="text-center" style="margin-bottom: 3rem;">
+      <span class="section-label">✦ Get In Touch</span>
+      <h2 class="section-title">Let's work together</h2>
+      <p class="section-subtitle">
+        Whether you have a project idea, a question, or just want to say hello —
+        my inbox is always open. I'd love to hear from you!
+      </p>
+    </div>
+
+    <div class="contact-inner">
+
+      <!-- Contact methods -->
+      <div class="contact-info-card reveal">
+        <h3 style="font-size:1rem; font-weight:700; color:var(--clr-text); margin-bottom:1rem;">
+          Contact Information
+        </h3>
+        <p style="font-size:0.875rem; color:var(--clr-text-muted); margin-bottom:1.5rem; line-height:1.7;">
+          Feel free to reach out via email or connect with me on GitHub.
+          I'm particularly interested in internship opportunities, collaborative
+          projects, and open-source contributions.
+        </p>
+
+        <a href="mailto:vaishnavi.kadam24@sakec.ac.in"
+           class="contact-method"
+           id="link-email-contact"
+           aria-label="Send email to vaishnavi.kadam24@sakec.ac.in">
+          <div class="cm-icon cm-icon-email" aria-hidden="true">✉️</div>
+          <div>
+            <div class="cm-label">Email</div>
+            <div class="cm-value">vaishnavi.kadam24@sakec.ac.in</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/vaishnavisk09"
+           target="_blank" rel="noopener noreferrer"
+           class="contact-method"
+           id="link-github-contact"
+           aria-label="GitHub profile vaishnavisk09">
+          <div class="cm-icon cm-icon-github" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--clr-text)" aria-hidden="true"><path d="M12 .5C5.649.5.5 5.649.5 12c0 5.099 3.308 9.416 7.894 10.944.577.106.788-.25.788-.556 0-.274-.01-1-.015-1.962-3.21.698-3.888-1.547-3.888-1.547-.525-1.334-1.282-1.689-1.282-1.689-1.047-.716.08-.702.08-.702 1.158.082 1.767 1.19 1.767 1.19 1.029 1.763 2.699 1.254 3.358.96.104-.745.403-1.254.732-1.543-2.563-.292-5.26-1.281-5.26-5.7 0-1.26.45-2.29 1.188-3.098-.119-.292-.515-1.465.112-3.054 0 0 .97-.31 3.177 1.184a11.06 11.06 0 012.893-.39c.981.004 1.969.133 2.893.39 2.204-1.494 3.172-1.184 3.172-1.184.629 1.589.233 2.762.114 3.054.74.808 1.187 1.838 1.187 3.098 0 4.43-2.701 5.405-5.273 5.69.415.359.785 1.065.785 2.145 0 1.548-.014 2.795-.014 3.175 0 .309.208.668.793.555C20.195 21.413 23.5 17.097 23.5 12 23.5 5.649 18.351.5 12 .5z"/></svg>
+          </div>
+          <div>
+            <div class="cm-label">GitHub</div>
+            <div class="cm-value">github.com/vaishnavisk09</div>
+          </div>
+        </a>
+
+        <div style="margin-top:1.5rem;">
+          <a href="mailto:vaishnavi.kadam24@sakec.ac.in"
+             class="btn btn-primary"
+             id="btn-send-email"
+             style="width:100%; justify-content:center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Send Me an Email
+          </a>
+        </div>
+      </div>
+
+      <!-- Note panel -->
+      <div class="contact-note-panel reveal reveal-delay-1">
+        <h3>I'd love to hear<br/>about your project ✨</h3>
+        <p>
+          I'm currently a Computer Engineering student actively looking for internship
+          opportunities and collaborative projects. If you're working on something
+          interesting in web development, software engineering, or technology in general,
+          I'd be delighted to connect.
+        </p>
+        <p>
+          Whether it's a quick question, a project idea, or just a friendly chat about
+          technology — feel free to reach out. I'll do my best to respond promptly.
+        </p>
+
+        <div class="form-disclaimer">
+          <strong>📌 Note about contact forms:</strong> This portfolio uses a direct
+          <code>mailto:</code> link rather than an embedded contact form. A form that
+          actually delivers messages to an inbox requires a backend service (such as
+          Formspree, EmailJS, or a custom server). For a fully static GitHub Pages
+          site, the email button above is the most reliable, no-cost solution.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container footer-inner">
+
+    <div class="footer-logo">
+      <div class="footer-logo-mark" aria-hidden="true">VK</div>
+      <div class="footer-name">Vaishnavi Kadam</div>
+      <div class="footer-tagline">Computer Engineering Student · Web Developer · Builder</div>
+    </div>
+
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="#home"     class="footer-link">Home</a>
+      <a href="#about"    class="footer-link">About</a>
+      <a href="#skills"   class="footer-link">Skills</a>
+      <a href="#projects" class="footer-link">Projects</a>
+      <a href="#contact"  class="footer-link">Contact</a>
+    </nav>
+
+    <a href="https://github.com/vaishnavisk09"
+       target="_blank" rel="noopener noreferrer"
+       class="footer-github-btn"
+       id="link-github-footer"
+       aria-label="GitHub profile">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.649.5.5 5.649.5 12c0 5.099 3.308 9.416 7.894 10.944.577.106.788-.25.788-.556 0-.274-.01-1-.015-1.962-3.21.698-3.888-1.547-3.888-1.547-.525-1.334-1.282-1.689-1.282-1.689-1.047-.716.08-.702.08-.702 1.158.082 1.767 1.19 1.767 1.19 1.029 1.763 2.699 1.254 3.358.96.104-.745.403-1.254.732-1.543-2.563-.292-5.26-1.281-5.26-5.7 0-1.26.45-2.29 1.188-3.098-.119-.292-.515-1.465.112-3.054 0 0 .97-.31 3.177 1.184a11.06 11.06 0 012.893-.39c.981.004 1.969.133 2.893.39 2.204-1.494 3.172-1.184 3.172-1.184.629 1.589.233 2.762.114 3.054.74.808 1.187 1.838 1.187 3.098 0 4.43-2.701 5.405-5.273 5.69.415.359.785 1.065.785 2.145 0 1.548-.014 2.795-.014 3.175 0 .309.208.668.793.555C20.195 21.413 23.5 17.097 23.5 12 23.5 5.649 18.351.5 12 .5z"/></svg>
+      @vaishnavisk09
+    </a>
+
+    <div class="footer-divider" role="separator"></div>
+
+    <p class="footer-copy">
+      © <span id="current-year"></span> Vaishnavi Kadam. Built with HTML, CSS &amp; JavaScript.
+      Designed for GitHub Pages deployment.
+    </p>
+
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+<!-- ── JavaScript ─────────────────────────────────────── -->
+<script src="script.js"></script>
+</body>
+</html>
